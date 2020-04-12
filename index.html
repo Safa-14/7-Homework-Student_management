@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student management</title>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <h1>Student Management</h1>
+    <h3>Student ID <span id="studentIDSpan"></span></h3>
+    <input type="text" id="studentNameInp" placeholder="Student Name">
+    <br> <br>
+    <select id="coursesList">
+        <option value="">Select Course</option>
+        <option value="Math">Math</option>
+        <option value="English">English</option>
+        <option value="Computer science1">Computer science1</option>
+        <option value="Java">Java</option>
+    </select>
+    <input type="number" id="studentGradeInp" placeholder="Grade" min="0" max="100"> 
+    <br> <br>
+    <button id="addGradeBtn">Add Grade</button>
+    <ul id="gradeListElement">
+        <!-- create dynamically li from js -->
+    </ul>
+    <button id="saveStudentBtn">Save Student</button>
+    <div id="containerDiv"></div>
+</body>
+</html>
